@@ -1,183 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpieza de Alfombras Profesional</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        .service-img {
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-img:hover {
-            transform: scale(1.05);
-        }
-        .action-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuraFibra — Limpieza de alfombras profesional · Free template</title>
+  <meta name="description" content="Plantilla gratuita en Bootstrap 5 para servicios de limpieza de alfombras: antes/después, proceso, cotizador y contacto. Licencia MIT.">
+  <meta name="theme-color" content="#0b3b3c">
+  <meta property="og:title" content="PuraFibra — Free cleaning template">
+  <meta property="og:description" content="Plantilla gratuita en Bootstrap 5 para limpieza de alfombras.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <a href="#contact" class="btn btn-warning btn-lg action-button">¡Contáctanos ahora!</a>
+<body id="top">
+  <a class="skip" href="#main">Saltar al contenido</a>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-primary text-white text-center py-5">
-            <div class="container">
-                <h1 class="display-4">Limpieza de Alfombras Profesional</h1>
-                <p class="lead">Devolvemos vida a sus alfombras con nuestro servicio experto</p>
-                <a href="#contact" class="btn btn-light btn-lg me-2">Contactar</a>
-                <a href="#process" class="btn btn-outline-light btn-lg">Ver proceso</a>
+  <div class="free-bar">
+    <div class="container">
+      <span><b>FREE TEMPLATE</b> Plantilla de limpieza 100% gratis <span class="license">· Licencia MIT</span></span>
+      <a href="https://github.com/EduGuate/CleaningTema" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Ver en GitHub</a>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <nav class="navbar navbar-expand-lg" aria-label="Principal">
+      <div class="container">
+        <a class="brand" href="#top"><img src="favicon.svg" alt="" width="36" height="36"> <b>Pura<span>Fibra</span></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#process">Proceso</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quote">Cotizar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Opiniones</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn-main btn-sm-main" href="#contact">¡Contáctanos ahora!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="bubbles" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 hero-copy">
+            <p class="pill"><i class="bi bi-stars"></i> Más de 10 años devolviendo vida a tus alfombras</p>
+            <h1>Tu alfombra,<br><em>como el primer día.</em></h1>
+            <p class="lead-text">Limpieza profesional a vapor para hogares y negocios. Quitamos manchas, olores y alérgenos — y la dejamos secando en horas, no en días.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn-main" href="#quote">Cotiza en 30 segundos <i class="bi bi-arrow-right"></i></a>
+              <a class="btn-soft" href="#process">Ver proceso</a>
             </div>
-        </section>
+            <ul class="hero-trust">
+              <li><i class="bi bi-shield-check"></i> Garantía de satisfacción</li>
+              <li><i class="bi bi-droplet"></i> Productos eco-friendly</li>
+              <li><i class="bi bi-clock"></i> Secado en 4 h</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <figure class="compare" id="compare" style="--pos:50%">
+              <img src="assets/rug-clean.webp" alt="Alfombra con patrón geométrico después de la limpieza, colores vivos" width="1200" height="800">
+              <div class="compare-dirty"><img src="assets/rug-dirty.webp" alt="La misma alfombra antes de la limpieza, apagada y con manchas" width="1200" height="800"></div>
+              <span class="tag tag-before">Antes</span><span class="tag tag-after">Después</span>
+              <div class="compare-handle" aria-hidden="true"><i class="bi bi-arrows-expand-vertical"></i></div>
+              <label class="visually-hidden" for="compare-range">Comparar antes y después</label>
+              <input id="compare-range" type="range" min="0" max="100" value="50">
+            </figure>
+            <p class="compare-hint"><i class="bi bi-hand-index"></i> Desliza para ver la diferencia</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Nuestros Servicios</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <img src="/api/placeholder/400/300" alt="Limpieza residencial" class="img-fluid rounded service-img">
-                        <h3 class="mt-3">Limpieza Residencial</h3>
-                        <p>Servicio de limpieza para hogares y apartamentos.</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/api/placeholder/400/300" alt="Limpieza comercial" class="img-fluid rounded service-img">
-                        <h3 class="mt-3">Limpieza Comercial</h3>
-                        <p>Soluciones de limpieza para oficinas y negocios.</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/api/placeholder/400/300" alt="Limpieza especializada" class="img-fluid rounded service-img">
-                        <h3 class="mt-3">Limpieza Especializada</h3>
-                        <p>Tratamientos especiales para manchas difíciles.</p>
-                    </div>
+    <div class="ticker-wrap"><div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Manchas de vino</span><span>Mascotas</span><span>Ácaros</span><span>Olores</span><span>Café</span><span>Barro</span><span>Alérgenos</span>
+        <span>Manchas de vino</span><span>Mascotas</span><span>Ácaros</span><span>Olores</span><span>Café</span><span>Barro</span><span>Alérgenos</span>
+      </div>
+    </div></div>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nuestros servicios</p>
+          <h2>Una limpieza para cada <em>espacio.</em></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><article class="service tilt"><div class="service-icon"><i class="bi bi-house-heart"></i></div><h3>Limpieza residencial</h3><p>Servicio de limpieza para hogares y apartamentos. Alfombras, tapetes y escaleras.</p><span class="from">desde <b>$2.50</b>/m²</span></article></div>
+          <div class="col-md-4 reveal"><article class="service featured tilt"><span class="badge-pop">Más pedido</span><div class="service-icon"><i class="bi bi-building"></i></div><h3>Limpieza comercial</h3><p>Soluciones para oficinas y negocios, en horarios que no interrumpen tu operación.</p><span class="from">desde <b>$1.80</b>/m²</span></article></div>
+          <div class="col-md-4 reveal"><article class="service tilt"><div class="service-icon"><i class="bi bi-magic"></i></div><h3>Limpieza especializada</h3><p>Tratamientos especiales para manchas difíciles, mascotas y alfombras delicadas.</p><span class="from">desde <b>$4.00</b>/m²</span></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nuestro proceso</p>
+          <h2>Cuatro pasos. <em>Cero complicaciones.</em></h2>
+        </div>
+        <ol class="steps reveal" id="steps">
+          <li><span class="step-n">01</span><i class="bi bi-calendar-check"></i><h3>Programación</h3><p>Agenda tu cita en línea o por teléfono.</p></li>
+          <li><span class="step-n">02</span><i class="bi bi-search"></i><h3>Inspección</h3><p>Evaluamos el estado y el tipo de fibra de tus alfombras.</p></li>
+          <li><span class="step-n">03</span><i class="bi bi-droplet-half"></i><h3>Limpieza</h3><p>Aplicamos nuestro proceso profesional a vapor.</p></li>
+          <li><span class="step-n">04</span><i class="bi bi-emoji-smile"></i><h3>Satisfacción</h3><p>Disfruta de tus alfombras como nuevas.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section why">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 reveal">
+            <p class="eyebrow">¿Por qué elegirnos?</p>
+            <h2>Limpio de verdad. <em>Garantizado.</em></h2>
+            <p class="muted">Experiencia, tecnología de última generación y la tranquilidad de una garantía real en cada servicio.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-4 reveal"><div class="stat"><strong><span data-count="10">0</span>+</strong><span>años en el mercado</span></div></div>
+              <div class="col-sm-4 reveal"><div class="stat"><strong><span data-count="98">0</span>%</strong><span>manchas eliminadas</span></div></div>
+              <div class="col-sm-4 reveal"><div class="stat"><strong><span data-count="4">0</span> h</strong><span>tiempo de secado</span></div></div>
+            </div>
+            <div class="row g-3 mt-1">
+              <div class="col-sm-4 reveal"><div class="why-card"><i class="bi bi-award"></i><b>Experiencia</b><span>Más de 10 años nos avalan.</span></div></div>
+              <div class="col-sm-4 reveal"><div class="why-card"><i class="bi bi-cpu"></i><b>Tecnología</b><span>Equipos de última generación.</span></div></div>
+              <div class="col-sm-4 reveal"><div class="why-card"><i class="bi bi-patch-check"></i><b>Garantía</b><span>Satisfacción en cada servicio.</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section id="quote" class="section">
+      <div class="container">
+        <div class="quote-card reveal">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <p class="eyebrow light">Cotizador</p>
+              <h2>¿Cuánto cuesta dejarla <em>impecable?</em></h2>
+              <p>Calcula un estimado al instante. Sin compromiso.</p>
+            </div>
+            <div class="col-lg-6">
+              <form id="quote-form" class="quote-form">
+                <label for="area">Superficie: <b><span id="area-out">20</span> m²</b></label>
+                <input type="range" id="area" min="5" max="200" step="5" value="20">
+                <label for="type" class="mt-3">Tipo de servicio</label>
+                <select id="type" class="form-select">
+                  <option value="2.5">Residencial · $2.50/m²</option>
+                  <option value="1.8">Comercial · $1.80/m²</option>
+                  <option value="4">Especializada · $4.00/m²</option>
+                </select>
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="protect">
+                  <label class="form-check-label" for="protect">Protector anti-manchas (+$0.80/m²)</label>
                 </div>
+                <div class="quote-total"><span>Estimado</span><strong>$<span id="total">50</span></strong></div>
+                <small>Precios de demostración en USD.</small>
+              </form>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Process Section -->
-        <section id="process" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Nuestro Proceso</h2>
-                <div class="row">
-                    <div class="col-md-3 text-center">
-                        <i class="fas fa-calendar fa-3x mb-3 text-primary"></i>
-                        <h4>Programación</h4>
-                        <p>Agenda tu cita en línea o por teléfono.</p>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <i class="fas fa-home fa-3x mb-3 text-primary"></i>
-                        <h4>Inspección</h4>
-                        <p>Evaluamos el estado de tus alfombras.</p>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <i class="fas fa-spray-can fa-3x mb-3 text-primary"></i>
-                        <h4>Limpieza</h4>
-                        <p>Aplicamos nuestro proceso de limpieza profesional.</p>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <i class="fas fa-check-circle fa-3x mb-3 text-primary"></i>
-                        <h4>Satisfacción</h4>
-                        <p>Disfruta de tus alfombras como nuevas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Lo que dicen nuestros clientes</p>
+          <h2>Alfombras felices, <em>clientes felices.</em></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><figure class="review"><div class="stars">★★★★★</div><blockquote>“Excelente servicio, mi alfombra quedó como nueva.”</blockquote><figcaption><span class="avatar">MG</span>María G.</figcaption></figure></div>
+          <div class="col-md-4 reveal"><figure class="review"><div class="stars">★★★★★</div><blockquote>“Profesionales y puntuales. Muy recomendados.”</blockquote><figcaption><span class="avatar">JP</span>Juan P.</figcaption></figure></div>
+          <div class="col-md-4 reveal"><figure class="review"><div class="stars">★★★★★</div><blockquote>“Lograron quitar manchas que creía imposibles.”</blockquote><figcaption><span class="avatar">AL</span>Ana L.</figcaption></figure></div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Why Choose Us Section -->
-        <section id="why-us" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">Experiencia</h3>
-                                <p class="card-text">Más de 10 años en el mercado nos avalan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">Tecnología</h3>
-                                <p class="card-text">Utilizamos equipos de última generación.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">Garantía</h3>
-                                <p class="card-text">Satisfacción garantizada en cada servicio.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section pt-0">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="bubbles small" aria-hidden="true"></div>
+          <p class="eyebrow light">Contáctanos</p>
+          <h2>Agenda hoy. <em>Respira mejor mañana.</em></h2>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a href="tel:+1234567890" class="btn-main btn-sun"><i class="bi bi-telephone"></i> Llamar ahora</a>
+            <a href="mailto:info@limpiezaalfombras.com" class="btn-soft light"><i class="bi bi-envelope"></i> Enviar email</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Excelente servicio, mi alfombra quedó como nueva."</p>
-                                <footer class="blockquote-footer">María G.</footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Profesionales y puntuales. Muy recomendados."</p>
-                                <footer class="blockquote-footer">Juan P.</footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Lograron quitar manchas que creía imposibles."</p>
-                                <footer class="blockquote-footer">Ana L.</footer>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- FREE TEMPLATE -->
+    <section id="template" class="section pt-0">
+      <div class="container">
+        <div class="opensource reveal">
+          <div>
+            <span class="free-pill">FREE &amp; OPEN SOURCE</span>
+            <h2>Una web impecable. <em>Sin costo.</em></h2>
+            <p class="muted">PuraFibra es una plantilla gratuita en Bootstrap 5 para negocios de limpieza: responsive, animada y con licencia MIT.</p>
+          </div>
+          <div class="os-actions">
+            <a class="btn-main" href="https://github.com/EduGuate/CleaningTema" target="_blank" rel="noopener noreferrer">Descargar en GitHub <i class="bi bi-arrow-up-right"></i></a>
+            <small class="muted">Sin registro. Sin tarjeta.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-5">
-            <div class="container text-center">
-                <h2 class="mb-5">Contáctanos</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <a href="tel:+1234567890" class="btn btn-primary btn-lg w-100">
-                            <i class="fas fa-phone me-2"></i>Llamar ahora
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="mailto:info@limpiezaalfombras.com" class="btn btn-secondary btn-lg w-100">
-                            <i class="fas fa-envelope me-2"></i>Enviar email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"> <b>Pura<span>Fibra</span></b></a>
+      <span>© <span id="year"></span> PuraFibra · Plantilla de demostración</span>
+      <span class="footer-links"><a href="#template">FREE TEMPLATE ↗</a><a href="LICENSE">Licencia MIT</a><a href="#top">Volver arriba ↑</a></span>
+    </div>
+  </footer>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Limpieza de Alfombras Profesional. Todos los derechos reservados.</p>
-    </footer>
+  <a class="fab" href="#contact" aria-label="Contáctanos ahora"><i class="bi bi-chat-dots-fill"></i></a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
